@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Application</title>
+</head>
+<body class="bg-white  font-[poppins]  flex flex-col justify-center items-center w-full">
+
+  <header class="headercenter w-full h-24  flex justify-center items-center h-16 text-gray-900">
+         
+    <ul class="list1 w-full  max-[750px]:px-4 px-6  lg:px-0 sm:px-4 justify-between flex lg:justify-center items-center gap-x-2  h-full" >
+        <li class=" cursor-pointer  text-xl  h-full md:px-8 lg:px-12 flex justify-start text-left items-center w-10/12  relative">
+          <a href="./index.html">Applicatio-name</a>
+          <div class="hidden absolute ">
+
+          </div>
+        </li>
+        
+      
+        <li data-dropdown-toggle="dropdownHover1"
+        data-dropdown-trigger="hover"  class="w-2/12 text-16 gap-x-2 px-4 hover:bg-black/20 hover:text-black py-2   rounded-lg hidden  lg:flex justify-center items-center cursor-pointer  transition-all ease duration-500">
+        <a href="./Connexion.html">Se connecter</a></li>
+       
+        <li data-dropdown-toggle="dropdownHover2"
+        data-dropdown-trigger="hover"  class="md:w-4/12 lg:w-3/12 text-center mr-4 text-16 gap-x-2 px-4 hover:bg-black/20 hover:text-black py-2   rounded-lg hidden  lg:flex justify-center items-center cursor-pointer  transition-all ease duration-500"  "><a href="./choixPage.html"> S'identifier / s'enregistrer</a>
+          </li>
+         
+        
+
+
+          <li class="flex lg:hidden  cursor-pointer" id="show">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+          </svg>
+          </li>
+    </ul>
+   
+    
+  </header>
+  
+  <div id="headerphone" class="min-w-[240px] sm:max-w-[300px] overflow-hidden transition-all ease-out duration-500 fixed top-0 left-0 transform translate-x-[-100%] bg-white z-[999] h-screen px-2 ">
+    <div class="h-24 flex  flex-col justify-between items-center w-full ">
+      <div class="flex justify-between items-center px-4 w-full py-5 "> <span>Application App</span> 
+      <span id="fermer" class="p-3 hover:bg-black/20 rounded-lg cursor-pointer text-black">     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg> </span> </div>
+
+
+      <a href="./Connexion.html" class="w-full py-2 rounded-lg hover:bg-black/20 text-black px-4"> Se connecter </a>
+      <a href="./choixPage.html"  class="w-full py-2 rounded-lg hover:bg-black/20 text-black px-4">S'identifier / s'enregistrer </a>
+
+    </div>
+    </div>
+    <section class="w-full h-screen  c1 px-4  flex-col  flex justify-start items-start overflow-hidden pb-4  px-0 md:px-10">
+    
+       <div class="w-full h-16 border-y border-gray-400 flex justify-start  items-center py-1"> 
+        <div class="flex justify-center items-center bg-black/20 w-16 py-3 rounded-lg">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.0392 15.6244C18.2714 14.084 19.0082 12.1301 19.0082 10.0041C19.0082 5.03127 14.9769 1 10.0041 1C5.03127 1 1 5.03127 1 10.0041C1 14.9769 5.03127 19.0082 10.0041 19.0082C12.1301 19.0082 14.084 18.2714 15.6244 17.0392L21.2921 22.707C21.6828 23.0977 22.3163 23.0977 22.707 22.707C23.0977 22.3163 23.0977 21.6828 22.707 21.2921L17.0392 15.6244ZM10.0041 17.0173C6.1308 17.0173 2.99087 13.8774 2.99087 10.0041C2.99087 6.1308 6.1308 2.99087 10.0041 2.99087C13.8774 2.99087 17.0173 6.1308 17.0173 10.0041C17.0173 13.8774 13.8774 17.0173 10.0041 17.0173Z" fill="#0F0F0F"/>
+                </svg>
+        </div>
+
+        <input type="text" class="focus:ring-1 focus:ring-gray-200 w-full h-full border-y border-gray-300 outline-none mx-2 pl-3" placeholder="veuillez EntreZ votre Recherche" />
+        <div class="flex justify-center items-center bg-black/20 w-16 py-3 rounded-lg">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 7C3 6.44772 3.44772 6 4 6H20C20.5523 6 21 6.44772 21 7C21 7.55228 20.5523 8 20 8H4C3.44772 8 3 7.55228 3 7ZM6 12C6 11.4477 6.44772 11 7 11H17C17.5523 11 18 11.4477 18 12C18 12.5523 17.5523 13 17 13H7C6.44772 13 6 12.5523 6 12ZM9 17C9 16.4477 9.44772 16 10 16H14C14.5523 16 15 16.4477 15 17C15 17.5523 14.5523 18 14 18H10C9.44772 18 9 17.5523 9 17Z" fill="#000"/>
+                </svg>
+        </div>
+    </div>
+
+    <div class="w-full flex justify-center flex-col items-center c1 py-36 sm:py-56">
+
+          <span class="w-full sm:w-5/12 text-center "> Faites des recherches sur l'ensemble
+             des données fournies en fonction des critères de filtres 
+             Faites des recherches sur l'ensemble
+             des données fournies en fonction des critères de filtres 
+            </span>
+            <a href="choixPage.html"><button class="cursor-pointer hover:bg-black hover:text-white my-5 px-4 transition-all ease-in  font-medium   duration-500 cursor-pointer  bg-black/20 text-black rounded py-2 text-center w-full">Revenir a la page de choix</button></a>
+
+    </div>
+
+
+    </section>
+
+     
+<!-- component -->
+<footer class="w-full  bg-gray-100 max-w-[1450px]">
+    <div class="w-full px-4 py-16 mx-auto sm:px-6 lg:px-14">
+      <div class="c1 grid grid-cols-1 gap-8 lg:grid-cols-3">
+        <div>
+        <img src="#" class="mr-5 h-6 sm:h-9" alt="logo" />
+          <p class="max-w-xs mt-4 text-sm text-gray-600">
+            Nous mettons tout a la disposition de vos enfants pour les permettre d'évoluer
+          </p>
+          
+        </div>
+        <div class="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
+          <div>
+            <p class="font-medium">
+              ismti 
+            </p>
+            <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+              <a class="hover:opacity-75" href> A propos de nous </a>
+              <a class="hover:opacity-75" href> Nous rencontrer </a>
+              <a class="hover:opacity-75" href> historique  </a>
+              <a class="hover:opacity-75" href> carrière </a>
+            </nav>
+          </div>
+          <div>
+            <p class="font-medium">
+              Services
+            </p>
+            <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+              <a class="hover:opacity-75" href> Enregistrer les notes  </a>
+              <a class="hover:opacity-75" href> stage  </a>
+            </nav>
+          </div>
+          <div>
+            <p class="font-medium">
+             Contact et émail
+            </p>
+            <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+              <a class="hover:opacity-75" href> +237 000 000 000 (mtn)  </a>
+              <a class="hover:opacity-75" href> +237 000 000 000  (Orange) </a>
+              <a class="hover:opacity-75" href> +237 000 000 000 (whatsapp)  </a>
+              <a class="hover:opacity-75" href>  Mendjeumen@gmail.com  </a>
+            </nav>
+          </div>
+          
+        </div>
+      </div>
+      <p class="mt-8 text-xs text-gray-800">
+        © 2023 
+      </p>
+    </div>
+  </footer>
+</body>
+<script src="./scrollreveal.js"></script>
+<script src="./tailwind.js"></script>
+<script src="./script.js"></script>
+</html>
