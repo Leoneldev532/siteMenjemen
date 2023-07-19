@@ -1,197 +1,50 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Application</title>
 </head>
-<body class="bg-white font-[poppins] flex flex-col justify-center items-center w-full">
+<body class="bg-white  font-[poppins]  flex justify-center items-center w-full">
 
-    <!-- <header class="headercenter w-full h-24  flex justify-center items-center h-16 text-gray-900">
-         
-        <ul class=" w-full  max-[750px]:px-4 px-6  lg:px-2 sm:px-5 justify-center bg-red-400 flex  items-center gap-x-2  h-full" >
-            <li class=" bg-green-500 cursor-pointer  text-xl  h-full   flex justify-start text-left items-center w-10/12 sm:w-8/12   relative">
-             Application - Name
-            </li>
-               
-            <li  class="text-16 gap-x-2 px-4 hover:bg-green-400/50 focus:bg-green-400/50 focus:text-green-700 hover:text-green-700 py-2 rounded-lg  hidden  lg:flex justify-center   items-center cursor-pointer hover:text-green-500 transition-all ease duration-500"><a> S'enregistrer / s'identifier </a></li>
-            <li class="text-16 gap-x-2 px-4 hover:bg-green-400/50 focus:bg-green-400/50 focus:text-green-700 hover:text-green-700 py-2 rounded-lg  hidden  lg:flex justify-center   items-center cursor-pointer hover:text-green-500 transition-all ease duration-500"> <a> Se connectez </a></li>
-              <li class="flex  cursor-pointer" id="show">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
-              </svg>
-              </li>
-        </ul>
-       
-        
-    </header>   -->
-
-  
-    <header class="headercenter w-full h-24  flex justify-center items-center h-16 text-gray-900">
-         
-      <ul class="list1 w-full  max-[750px]:px-4 px-6  lg:px-0 sm:px-4 justify-between flex lg:justify-center items-center gap-x-2  h-full" >
-          <li class=" cursor-pointer  text-xl  h-full md:px-8 lg:px-12 flex justify-start text-left items-center w-10/12  relative">
-            <a href="./index.html">Applicatio-name</a>
-            <div class="hidden absolute ">
-  
-            </div>
-          </li>
-          
-        
-          <li data-dropdown-toggle="dropdownHover1"
-          data-dropdown-trigger="hover"  class="w-2/12 text-16 gap-x-2 px-4 hover:bg-black/20 hover:text-black py-2   rounded-lg hidden  lg:flex justify-center items-center cursor-pointer  transition-all ease duration-500">
-          <a href="./Connexion.html">Se connecter</a></li>
-         
-          <li data-dropdown-toggle="dropdownHover2"
-          data-dropdown-trigger="hover"  class="md:w-4/12 lg:w-3/12 text-center mr-4 text-16 gap-x-2 px-4 hover:bg-black/20 hover:text-black py-2   rounded-lg hidden  lg:flex justify-center items-center cursor-pointer  transition-all ease duration-500"  "><a href="./choixPage.html"> S'identifier / s'enregistrer</a>
-            </li>
-           
-          
-  
-  
-            <li class="flex lg:hidden  cursor-pointer" id="show">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
-            </svg>
-            </li>
-      </ul>
-      
-      
-    </header>
-
-    <div id="headerphone" class="min-w-[240px] sm:max-w-[300px] overflow-hidden transition-all ease-out duration-500 fixed top-0 left-0 transform translate-x-[-100%] bg-white z-[999] h-screen px-2 ">
-      <div class="h-24 flex  flex-col justify-between items-center w-full ">
-        <div class="flex justify-between items-center px-4 w-full py-5 "> <span>Application App</span> 
-        <span id="fermer" class="p-3 hover:bg-black/20 rounded-lg cursor-pointer text-black">     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-        </svg> </span> </div>
-
-
-        <a href="./Connexion.html" class="w-full py-2 rounded-lg hover:bg-black/20 text-black px-4"> Se connecter </a>
-        <a href="./choixPage.html"  class="w-full py-2 rounded-lg hover:bg-black/20 text-black px-4">S'identifier / s'enregistrer </a>
-
-      </div>
-      </div>
-
-
-
-
-           <div class="flex flex-col gap-y-2 justify-center items-start w-full">
-
-        <div class="c1 leading-relaxed w-full lg:w-9/12 px-4 sm:px-8" >
-            <h2 class="text-3xl md:text-4xl font-extrabold  lg:text-7xl py-3 
-            ">Profitez de notre logiciel au maximum </h2>
-            <p class="text-xl sm:text-2xl py-4 font-thin">
-                Profiter au maxumum de tout ce qui est proposé a vous cher public
-                ui est proposé a vous cher public ui est proposé a vous cher public
-            </p>
-            <div class="flex gap-x-4 flex-col sm:flex-row  py-4">
-                    <a  href="#fairechoix" class="px-6 py-2 my-4 sm:my-0 w-full sm:w-auto bg-black/20 rounded hover:bg-black hover:text-white transition-all ease-in" href="">Faire un choix</a>
-                    <a  href="./Connexion.html" class="px-6  w-full sm:w-auto  py-2 bg-black rounded text-white border border-black hover:text-black hover:bg-transparent transition-all ease-out duration-500" href="">Se connectez</a>
-            </div>
-        </div>
-
-        <div class="w-full object-cover object-center max-h-[450px]  overflow-hidden px-4 sm:px-8 ">
-            <img  class=" w-full   object-contain z-0 rounded-lg" src="./image/i1.jpg" alt="Logo" />
-            
-        </div>
-
-        <div class="w-full flex gap-x-4 flex-col  justify-center items-center">
-            
-            <div class="leading-relaxed w-full  px-4 sm:px-8 c2" >
-
-                <h2 class="text-4xl md:text-3xl font-extrabold  lg:text-4xl py-3"> Faites un Choix </h2>
-                <p class="text-sm sm:text-2xl py-4 font-thin md:w-8/12">
-                    Profiter au maxumum de tout ce qui est proposé a vous cher public
-                    ui est proposé a vous cher public ui est proposé a vous cher public
-                </p>
-
-            </div>
-        <div id="fairechoix" class="w-full flex-col sm:flex-row flex px-2 sm:px-8">
-            <div class="c2 rounded p-2 sm:p-4  flex flex w-full  sm:w-1/2 flex-col justify-center items-start  ">
-                <svg width="160" height="160" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 11L3 11" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
-                    <path d="M10 16H3" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
-                    <path d="M14 13.5L16.1 16L20 11" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M3 6L13.5 6M20 6L17.75 6" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                    <h2>S'enregistrez Ici </h2>
-                    <p>Faites Enregistrez les étudiants ici</p>
-                    <a href="./scanCarte.html" ><button class="px-4 py-2 bg-gray-200 cursor-pointer hover:bg-black hover:text-white  rounded my-4 transition-all ease-in duration-500"> S'enregistrer </button></a>
-            </div>
+    <section class="w-full h-screen bg-[url('./image/i1.jpg')] bg-blend-overlay  bg-black/70 bg-cover  flex justify-center items-center overflow-hidden">
 
        
-            <div class="c3  rounded p-2 sm:p-4   w-full  sm:w-1/2 flex flex flex-col justify-center items-start  ">
-                    
-                <svg class=" rounded-full " width="180" height="180" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="10" cy="6" r="4" stroke="#1C274C" stroke-width="1.5"/>
-                    <path d="M21 10H19M19 10H17M19 10L19 8M19 10L19 12" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
-                    <path d="M17.9975 18C18 17.8358 18 17.669 18 17.5C18 15.0147 14.4183 13 10 13C5.58172 13 2 15.0147 2 17.5C2 19.9853 2 22 10 22C12.231 22 13.8398 21.8433 15 21.5634" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                    <h2>S'identifiez Ici </h2>
-                    <p>Faites Enregistrez les étudiants ici</p>
-                    <a href="./choixPage.html"><button class="px-4 py-2 bg-gray-200 cursor-pointer hover:bg-black hover:text-white  rounded my-4 transition-all ease-in duration-500"> S'identifier </button></a>
-            
-            </div>
-        </div>   
-        </div>
+        <div class=" max-[850px]:w-full px-42 min-[850px]:w-1/2 text-gray-800   h-full flex sm:px-8 justify-center items-start py-8">
 
-    </div>
+            <form method="post"  class="backdrop-blur-sm space-y-4 md:px-8 px-4 sm:px-16 w-full h-auto">
+                <h2 class="text-5xl text-white font-extrabold py-4 text-black/90 max-[400px]:px-0 max-[400px]:text-2xl  max-[400px]:py-1 ">Connectez-Vous</h2>
+                <p class="p-4 bg-gray-100 rounded">Allez y et profiter des focntionnalités exceptionnelles de notre Application</p>
+                <p class="text-white">Email : </p>
+                <input type="email" class="focus:ring-[0.5px] focus:ring-gray-400 border border-gray-400 h-10 w-full rounded px-2 text-black outline-none py-2" placeholder="Entre Votre nom ici" name="nom"> 
+                <p class="text-white">Mot de passe : </p>
+                <input type="password"  class="focus:ring-[0.5px] focus:ring-gray-400 border border-gray-400  h-10 w-full rounded px-2 text-black outline-none py-2" placeholder="Entre Votre mot de passe ici" name="mdp"> 
+                <br>
+                <div class="flex flex-col justify-center items-start gap-y-2">
+                    <input type="submit" name="Se connectez"  class="cursor-pointer hover:bg-black/80 hover:text-white transition-all ease-in  font-medium   duration-500 cursor-pointer   bg-gray-400 text-black rounded py-2 text-center w-full" />
+                    <a href="./choixPage.html" class="cursor-pointer  text-white border hover:bg-black hover:text-white font-medium transition-all ease-in duration-500 cursor-pointer border-gray-500 rounded py-2 text-center w-full"   >Faire un choix</a>
+                    <p class="py-4 text-white">
+                        <span> Mot de passe  oublié ? <a class="font-medium underline  cursor-pointer">cliquez Ici</a> <a class="font-medium underline cursor-pointer">creer un compte</a>  </span>
+                    </p>
+                </div>
 
-    <footer class="w-full  bg-gray-100 max-w-[1450px]">
-      <div class="w-full px-4 py-16 mx-auto sm:px-6 lg:px-14">
-        <div class="c1 grid grid-cols-1 gap-8 lg:grid-cols-3">
-          <div>
-          <img src="#" class="mr-5 h-6 sm:h-9" alt="logo" />
-            <p class="max-w-xs mt-4 text-sm text-gray-600">
-              Nous mettons tout a la disposition de vos enfants pour les permettre d'évoluer
-            </p>
-            
-          </div>
-          <div class="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
-            <div>
-              <p class="font-medium">
-                ismti 
-              </p>
-              <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                <a class="hover:opacity-75" href> A propos de nous </a>
-                <a class="hover:opacity-75" href> Nous rencontrer </a>
-                <a class="hover:opacity-75" href> historique  </a>
-                <a class="hover:opacity-75" href> carrière </a>
-              </nav>
-            </div>
-            <div>
-              <p class="font-medium">
-                Services
-              </p>
-              <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                <a class="hover:opacity-75" href> Enregistrer les notes  </a>
-                <a class="hover:opacity-75" href> stage  </a>
-              </nav>
-            </div>
-            <div>
-              <p class="font-medium">
-               Contact et émail
-              </p>
-              <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                <a class="hover:opacity-75" href> +237 000 000 000 (mtn)  </a>
-                <a class="hover:opacity-75" href> +237 000 000 000  (Orange) </a>
-                <a class="hover:opacity-75" href> +237 000 000 000 (whatsapp)  </a>
-                <a class="hover:opacity-75" href>  Mendjeumen@gmail.com  </a>
-              </nav>
-            </div>
-            
-          </div>
+            </form>
+
         </div>
-        <p class="mt-8 text-xs text-gray-800">
-          © 2023 
-        </p>
-      </div>
-    </footer>
+        
+
+
+    </section>
+
+
+
+    
 </body>
+
 <script src="./scrollreveal.js"></script>
 <script src="./tailwind.js"></script>
 <script src="./script.js"></script>
